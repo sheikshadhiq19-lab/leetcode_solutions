@@ -10,7 +10,7 @@ class Solution(object):
                 else:
                     return False
         else:
-            return False
-        return True
+            return  False
+        return  True
 
         
