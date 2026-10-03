@@ -2,11 +2,11 @@ class Solution(object):
     def calPoints(self, operations):
         stack=[]
         for i in operations:
-            if i=="C":
+            if stack and i=="C":
                 stack.pop()
-            elif i=="D":
+            elif stack and i=="D":
                 stack.append(stack[-1]*2)
-            elif i=="+":
+            elif stack and i=="+":
                 stack.append(stack[-1]+stack[-2])
             else:
                 stack.append(int(i))
