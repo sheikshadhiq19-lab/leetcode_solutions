@@ -9,6 +9,7 @@ class MinStack(object):
         else:
             m = min(value, self.stack[-1][1])
         self.stack.append((value,m))
+        
     def pop(self):
         return self.stack.pop()
         
